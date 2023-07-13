@@ -127,11 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="drib.cpp" />
+    <ClCompile Include="drib_one.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="drib_two.cpp" />
+    <ClCompile Include="dribs.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="drib.h" />
+    <ClInclude Include="dribs.h" />
+    <ClInclude Include="drib_one.h" />
+    <ClInclude Include="drib_two.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
