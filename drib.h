@@ -10,4 +10,21 @@ struct Drib
     void input_drib();
     void print_drib();
     void axe_drib();
+
+    void addition()
+    {
+        
+    }
+    void subtraction()
+    {
+
+    }
+    void multiplication()
+    {
+
+    }
+    void division()
+    {
+
+    }
 };
