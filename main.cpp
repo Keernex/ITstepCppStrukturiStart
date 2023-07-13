@@ -1,13 +1,11 @@
-#include "pramokutnik.h"
-
+#include "points.h"
 
 int main()
 {
-    Pramokutnik pramokutnik_usual;
-    pramokutnik_usual.input_pramokutnik();
-    pramokutnik_usual.print_pramokutnik();
-    pramokutnik_usual.paint_pramokutnik();
-
+    Points points;
+    points.input_points();
+    points.print_points();
+    points.len_between_points();
     return 0;
 }
 

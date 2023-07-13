@@ -16,21 +16,42 @@
     <Filter Include="presentation">
       <UniqueIdentifier>{fa224f73-2376-4cd4-a0a6-72d27ce1a642}</UniqueIdentifier>
     </Filter>
-    <Filter Include="domain\pramokutnik">
-      <UniqueIdentifier>{25d9286a-45ca-470c-9eb2-8a2512f8f0c9}</UniqueIdentifier>
+    <Filter Include="domain\models">
+      <UniqueIdentifier>{7313c20d-1722-443a-9aaa-ab04bef68c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain\models\point_one">
+      <UniqueIdentifier>{d7fd4d55-61a1-4bbd-8f8b-291c531ebf7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain\models\point_two">
+      <UniqueIdentifier>{42b41a7c-f5c6-41f0-be57-cddcb7e015a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain\models\points">
+      <UniqueIdentifier>{9969302c-0dbf-48a2-adf0-5f4a840e6343}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>main</Filter>
     </ClCompile>
-    <ClCompile Include="pramokutnik.cpp">
-      <Filter>domain\pramokutnik</Filter>
+    <ClCompile Include="points.cpp">
+      <Filter>domain\models\points</Filter>
+    </ClCompile>
+    <ClCompile Include="point_two.cpp">
+      <Filter>domain\models\point_two</Filter>
+    </ClCompile>
+    <ClCompile Include="point_one.cpp">
+      <Filter>domain\models\point_one</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pramokutnik.h">
-      <Filter>domain\pramokutnik</Filter>
+    <ClInclude Include="points.h">
+      <Filter>domain\models\points</Filter>
+    </ClInclude>
+    <ClInclude Include="point_two.h">
+      <Filter>domain\models\point_two</Filter>
+    </ClInclude>
+    <ClInclude Include="point_one.h">
+      <Filter>domain\models\point_one</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
