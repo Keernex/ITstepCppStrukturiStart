@@ -127,7 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="combineds.cpp" />
+    <ClCompile Include="combined_one.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="combined_two.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="combineds.h" />
+    <ClInclude Include="combined_one.h" />
+    <ClInclude Include="combined_two.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
