@@ -1,18 +1,8 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <regex>
-#include <time.h>
-#include <windows.h>
-#include <algorithm>
-#include <string>
-#include <sstream>
-#include <cstring>
-#include <cctype>
-using namespace std;
-
 #include "point_two.h"
 #include "point_one.h"
-
+#include <cmath>
+using namespace std;
 struct Points
 {
 	Point_two point_two;

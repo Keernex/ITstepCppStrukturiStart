@@ -1,5 +1,4 @@
 #include "points.h"
-
 int main()
 {
     Points points;

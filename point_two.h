@@ -1,6 +1,5 @@
-#include "points.h"
-
-
+#include <iostream>
+using namespace std;
 struct Point_two
 {
     int x2;
