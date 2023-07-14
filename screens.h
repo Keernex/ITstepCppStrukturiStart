@@ -7,7 +7,7 @@ public:
 	{
 		LibraryProvider* provider = new LibraryProvider();
 		provider->add(new Library("test 1","test 2","test 3","test 4"));
-		provider->print();
+		provider->print_library();
 	}
 };
 

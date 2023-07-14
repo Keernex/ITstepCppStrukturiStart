@@ -8,9 +8,9 @@ struct LibraryProvider
 	LibraryProvider();
 	~LibraryProvider();
 
-	void add(Library* animal);
+	void add(Library* book);
 	void remove(int index);
-	void print();
 	Library* get(int index);
 	int size();
+	void print_library();
 };

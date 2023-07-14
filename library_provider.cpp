@@ -1,51 +1,61 @@
 #include "library_provider.h"
 
-AnimalProvider::AnimalProvider() {
+LibraryProvider::LibraryProvider()
+{
 	count = 0;
-	animals = new Animal * [capacity];
+	books = new Library * [capacity];
 }
 
-AnimalProvider::~AnimalProvider() {
-	delete[] animals;
+LibraryProvider::~LibraryProvider()
+{
+	delete[] books;
 	count = 0;
 }
 
-void AnimalProvider::add(Animal* animal) {
-	if (count < capacity) {
-		animals[count] = animal;
+void LibraryProvider::add(Library* book)
+{
+	if (count < capacity)
+	{
+		books[count] = book;
 		count++;
 	}
 }
 
-void AnimalProvider::remove(int index) {
-	if (index >= 0 && index < count) {
-		delete animals[index];
-		for (int i = index; i < count - 1; i++) {
-			animals[i] = animals[i + 1];
+void LibraryProvider::remove(int index)
+{
+	if (index >= 0 && index < count)
+	{
+		delete books[index];
+		for (int i = index; i < count - 1; i++)
+		{
+			books[i] = books[i + 1];
 		}
 		count--;
 	}
 }
 
-Animal* AnimalProvider::get(int index) {
-	if (index >= 0 && index < count) {
-		return animals[index];
+Library* LibraryProvider::get(int index)
+{
+	if (index >= 0 && index < count)
+	{
+		return books[index];
 	}
 	return nullptr;
 }
 
-int AnimalProvider::size() {
+int LibraryProvider::size()
+{
 	return count;
 }
 
-void AnimalProvider::print() {
-	for (int i = 0; i < count; i++) {
-		cout << "Name: " << animals[i]->name << endl;
-		cout << "Age: " << animals[i]->age << endl;
-		cout << "Weight: " << animals[i]->weight << endl;
-		cout << "Height: " << animals[i]->height << endl;
-		cout << "Type: " << animals[i]->type << endl;
-
-		animals[i]->DoSth();
+void LibraryProvider::print_library()
+{
+	for (int i = 0; i < count; i++) 
+	{
+		cout << "Book " << i << ' ' << endl;
+		cout << "Name: " << books[i]->name << endl;
+		cout << "Age: " << books[i]->author << endl;
+		cout << "Weight: " << books[i]->publisher << endl;
+		cout << "Height: " << books[i]->genre << endl;
 	}
 }

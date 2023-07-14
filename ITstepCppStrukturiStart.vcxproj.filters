@@ -9,28 +9,43 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="main">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="presentation">
       <UniqueIdentifier>{fa224f73-2376-4cd4-a0a6-72d27ce1a642}</UniqueIdentifier>
     </Filter>
-    <Filter Include="domain\pramokutnik">
-      <UniqueIdentifier>{25d9286a-45ca-470c-9eb2-8a2512f8f0c9}</UniqueIdentifier>
+    <Filter Include="internal">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="domain\library">
+      <UniqueIdentifier>{a0819563-c26d-4537-a904-8dcd9ceabf83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain\library_provider">
+      <UniqueIdentifier>{3000903f-30a1-47bf-b331-8d49b28a1853}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>main</Filter>
+    <ClCompile Include="application.cpp">
+      <Filter>internal</Filter>
     </ClCompile>
-    <ClCompile Include="pramokutnik.cpp">
-      <Filter>domain\pramokutnik</Filter>
+    <ClCompile Include="library.cpp">
+      <Filter>domain\library</Filter>
+    </ClCompile>
+    <ClCompile Include="library_provider.cpp">
+      <Filter>domain\library_provider</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pramokutnik.h">
-      <Filter>domain\pramokutnik</Filter>
+    <ClInclude Include="lib.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="screens.h">
+      <Filter>presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="library.h">
+      <Filter>domain\library</Filter>
+    </ClInclude>
+    <ClInclude Include="library_provider.h">
+      <Filter>domain\library_provider</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
