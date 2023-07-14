@@ -57,5 +57,19 @@ void LibraryProvider::print_library()
 		cout << "Age: " << books[i]->author << endl;
 		cout << "Weight: " << books[i]->publisher << endl;
 		cout << "Height: " << books[i]->genre << endl;
+		cout << endl;
+	}
+}
+
+void LibraryProvider::book_sort_name()
+{
+	struct TitleComparator {
+		bool operator()(const Library* book1, const Library* book2) const {
+			return book1->getName() < book2->getName();
+		}
+	};
+	void sortBooksByTitle()
+	{
+		sort(libraries.begin(), libraries.end(), TitleComparator());
 	}
 }

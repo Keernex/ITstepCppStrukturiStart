@@ -8,4 +8,5 @@
 #include <sstream>
 #include <cstring>
 #include <cctype>
+#include <vector>
 using namespace std;

@@ -13,4 +13,5 @@ struct LibraryProvider
 	Library* get(int index);
 	int size();
 	void print_library();
+	void book_sort_name();
 };
