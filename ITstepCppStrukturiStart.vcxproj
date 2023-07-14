@@ -127,7 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="application.cpp" />
+    <ClCompile Include="washing.cpp" />
+    <ClCompile Include="washing_provider.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="washing.h" />
+    <ClInclude Include="washing_provider.h" />
+    <ClInclude Include="lib.h" />
+    <ClInclude Include="screens.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
