@@ -4,13 +4,13 @@ Washing::Washing()
 {
     brand = "NULL";
     color = "NULL";
-    width = 0;
-    height = 0;
-    power = 0;
-    spin_speed = 0;
-    heating_temperature = 0;
+    width = "NULL";
+    height = "NULL";
+    power = "NULL";
+    spin_speed = "NULL";
+    heating_temperature = "NULL";
 }
-Washing::Washing(string brand, string color, int width, int height, int power, int spin_speed, int heating_temperature)
+Washing::Washing(string brand, string color, string width, string height, string power, string spin_speed, string heating_temperature)
 {
     this->brand = brand;
     this->color = color;

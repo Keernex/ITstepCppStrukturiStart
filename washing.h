@@ -4,13 +4,13 @@ struct Washing
 {
 	string brand;
 	string color;
-	int width;
-	int height;
-	int power;
-	int spin_speed;
-	int heating_temperature;
+	string width;
+	string height;
+	string power;
+	string spin_speed;
+	string heating_temperature;
 	Washing();
-	Washing(string brand, string color, int width, int height, int power, int spin_speed, int heating_temperature);
+	Washing(string brand, string color, string width, string height, string power, string spin_speed, string heating_temperature);
 	void start_washing();
 	void stop_washing();
 	void input_characteristics();
