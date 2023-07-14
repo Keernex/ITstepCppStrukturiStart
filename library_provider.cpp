@@ -60,16 +60,52 @@ void LibraryProvider::print_library()
 		cout << endl;
 	}
 }
+void LibraryProvider::Red(int index)
+{
+	if (index >= 0 && index < count)
+	{
+		/*delete LibraryProvider::books[index];*/
+		cout << "Book "  << index << endl;
+	}
+}
+
+void LibraryProvider::find_by_name(string name)
+{
+	for (int i = 0; i < count; i++)
+	{
+		if (name == books[i]->name)
+		{
+			cout << "Book" << endl;
+			cout << "Name: " << books[i]->name << endl;
+			cout << "Age: " << books[i]->author << endl;
+			cout << "Weight: " << books[i]->publisher << endl;
+			cout << "Height: " << books[i]->genre << endl;
+			cout << endl;
+		}
+	}
+}
+void LibraryProvider::find_by_author(string author)
+{
+	for (int i = 0; i < count; i++)
+	{
+		if (author == books[i]->author)
+		{
+			cout << "Book" << endl;
+			cout << "Name: " << books[i]->name << endl;
+			cout << "Age: " << books[i]->author << endl;
+			cout << "Weight: " << books[i]->publisher << endl;
+			cout << "Height: " << books[i]->genre << endl;
+			cout << endl;
+		}
+	}
+}
+
 
 void LibraryProvider::book_sort_name()
 {
-	struct TitleComparator {
-		bool operator()(const Library* book1, const Library* book2) const {
-			return book1->getName() < book2->getName();
+	sort(books, books + count,
+		[](const Library* a, const Library* b) {
+			return (a->name < b->name);
 		}
-	};
-	void sortBooksByTitle()
-	{
-		sort(libraries.begin(), libraries.end(), TitleComparator());
-	}
+	);
 }

@@ -14,3 +14,5 @@ Library::Library(string name, string author, string publisher, string genre)
 	this->publisher = publisher;
 	this->genre = genre;
 }
+
+
