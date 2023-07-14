@@ -17,4 +17,6 @@ struct LibraryProvider
 	void find_by_name(string name);
 	void find_by_author(string author);
 	void book_sort_name();
+	void book_sort_author();
+	void book_sort_publisher();
 };

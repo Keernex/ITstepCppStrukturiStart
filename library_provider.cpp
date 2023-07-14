@@ -109,3 +109,21 @@ void LibraryProvider::book_sort_name()
 		}
 	);
 }
+
+void LibraryProvider::book_sort_author()
+{
+	sort(books, books + count,
+		[](const Library* a, const Library* b) {
+			return (a->author < b->author);
+		}
+	);
+}
+
+void LibraryProvider::book_sort_publisher()
+{
+	sort(books, books + count,
+		[](const Library* a, const Library* b) {
+			return (a->publisher < b->publisher);
+		}
+	);
+}
