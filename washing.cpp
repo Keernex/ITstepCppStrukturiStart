@@ -30,20 +30,41 @@ void Washing::stop_washing() {
 
 void Washing::input_characteristics()
 {
+    string h1;
     cout << "Brand: ";
-    cin >> brand;
+    cin >> h1;
+
+    string h2;
     cout << "Color: ";
-    cin >> color;
+    cin >> h2;
+
+    string h3;
     cout << "Dimensions width: ";
-    cin >> width;
+    cin >> h3;
+
+    string h4;
     cout << "Dimensions height: ";
-    cin >> height;
+    cin >> h4;
+
+    string h5;
     cout << "Power: ";
-    cin >> power;
+    cin >> h5;
+
+    string h6;
     cout << "Spin Speed: ";
-    cin >> spin_speed;
+    cin >> h6;
+
+    string h7;
     cout << "Temperature: ";
-    cin >> heating_temperature;
+    cin >> h7;
+
+    brand = h1;
+    color = h2;
+    width = h3;
+    height = h4;
+    power = h5;
+    spin_speed = h6;
+    heating_temperature = h7;
 }
 
 void Washing::print_characteristics() {

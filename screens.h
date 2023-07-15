@@ -5,7 +5,7 @@ struct Screen
 public:
 	static void Home()
 	{
-		Washing washing("qwe","asd",1,2,3,4,5);
+		Washing washing;
 		int q = 0;
 		cout << "1 - input characteristics" << endl;
 		cout << "2 - print characteristics" << endl;
