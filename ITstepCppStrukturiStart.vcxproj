@@ -128,12 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="application.cpp" />
-    <ClCompile Include="washing.cpp" />
+    <ClCompile Include="iron.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="screens.h" />
     <ClInclude Include="lib.h" />
-    <ClInclude Include="washing.h" />
+    <ClInclude Include="iron.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

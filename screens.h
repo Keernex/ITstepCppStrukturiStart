@@ -1,32 +1,32 @@
-#include "washing.h"
+#include "iron.h"
 
 struct Screen
 {
 public:
 	static void Home()
 	{
-		Washing washing;
+		Iron iron;
 		int q = 0;
 		cout << "1 - input characteristics" << endl;
 		cout << "2 - print characteristics" << endl;
-		cout << "3 - start washing" << endl;
-		cout << "4 - stop washing" << endl;
+		cout << "3 - start iron" << endl;
+		cout << "4 - stop iron" << endl;
 		while (true)
 		{
 			cout << "Enter num: ";
 			cin >> q;
 			if (q == 1)
 			{
-				washing.input_characteristics();
+				iron.input_characteristics();
 			}if (q == 2)
 			{
-				washing.print_characteristics();
+				iron.print_characteristics();
 			}if (q == 3)
 			{
-				washing.start_washing();
+				iron.start_iron();
 			}if (q == 4)
 			{
-				washing.stop_washing();
+				iron.stop_iron();
 				break;
 			}
 		}
