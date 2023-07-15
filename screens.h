@@ -1,11 +1,11 @@
-#include "iron.h"
+#include "boiler.h"
 
 struct Screen
 {
 public:
 	static void Home()
 	{
-		Iron iron;
+		Boiler boiler;
 		int q = 0;
 		cout << "1 - input characteristics" << endl;
 		cout << "2 - print characteristics" << endl;
@@ -17,16 +17,16 @@ public:
 			cin >> q;
 			if (q == 1)
 			{
-				iron.input_characteristics();
+				boiler.input_characteristics();
 			}if (q == 2)
 			{
-				iron.print_characteristics();
+				boiler.print_characteristics();
 			}if (q == 3)
 			{
-				iron.start_iron();
+				boiler.start_boiler();
 			}if (q == 4)
 			{
-				iron.stop_iron();
+				boiler.stop_boiler();
 				break;
 			}
 		}
