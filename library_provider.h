@@ -12,8 +12,9 @@ struct LibraryProvider
 	void remove(int index);
 	Library* get(int index);
 	int size();
+
+	void edit_book(int index);
 	void print_library();
-	void Red(int index);
 	void find_by_name(string name);
 	void find_by_author(string author);
 	void book_sort_name();

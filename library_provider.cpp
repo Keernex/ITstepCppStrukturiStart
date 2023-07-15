@@ -48,25 +48,40 @@ int LibraryProvider::size()
 	return count;
 }
 
+void LibraryProvider::edit_book(int index)
+{
+	cout << "Book " << index + 1 << endl;
+
+	string name;
+	cout << "Enter name: ";
+	cin >> name;
+	books[index]->name = name;
+
+	cout << "Enter author: ";
+	cin >> name;
+	books[index]->author = name;
+
+	cout << "Enter publisher: ";
+	cin >> name;
+	books[index]->publisher = name;
+
+	cout << "Enter genre: ";
+	cin >> name;
+	books[index]->genre = name;
+	cout << endl;
+}
+
 void LibraryProvider::print_library()
 {
-	for (int i = 0; i < count; i++) 
+	for (int i = 0; i < count; i++)
 	{
-		cout << "Book " << i << ' ' << endl;
-		cout << "Name: " << books[i]->name << endl;
-		cout << "Age: " << books[i]->author << endl;
-		cout << "Weight: " << books[i]->publisher << endl;
-		cout << "Height: " << books[i]->genre << endl;
+		cout << "Book " << i + 1;
+		cout << " Name: " << books[i]->name;
+		cout << " Age: " << books[i]->author;
+		cout << " Publisher: " << books[i]->publisher;
+		cout << " Genre: " << books[i]->genre;
 		cout << endl;
-	}
-}
-void LibraryProvider::Red(int index)
-{
-	if (index >= 0 && index < count)
-	{
-		/*delete LibraryProvider::books[index];*/
-		cout << "Book "  << index << endl;
-	}
+	}cout << endl;
 }
 
 void LibraryProvider::find_by_name(string name)
@@ -75,11 +90,11 @@ void LibraryProvider::find_by_name(string name)
 	{
 		if (name == books[i]->name)
 		{
-			cout << "Book" << endl;
-			cout << "Name: " << books[i]->name << endl;
-			cout << "Age: " << books[i]->author << endl;
-			cout << "Weight: " << books[i]->publisher << endl;
-			cout << "Height: " << books[i]->genre << endl;
+			cout << "Book ";
+			cout << " Name: " << books[i]->name;
+			cout << " Age: " << books[i]->author;
+			cout << " Publisher: " << books[i]->publisher;
+			cout << " Genre: " << books[i]->genre;
 			cout << endl;
 		}
 	}
@@ -90,11 +105,11 @@ void LibraryProvider::find_by_author(string author)
 	{
 		if (author == books[i]->author)
 		{
-			cout << "Book" << endl;
-			cout << "Name: " << books[i]->name << endl;
-			cout << "Age: " << books[i]->author << endl;
-			cout << "Weight: " << books[i]->publisher << endl;
-			cout << "Height: " << books[i]->genre << endl;
+			cout << "Book ";
+			cout << " Name: " << books[i]->name;
+			cout << " Age: " << books[i]->author;
+			cout << " Publisher: " << books[i]->publisher;
+			cout << " Genre: " << books[i]->genre;
 			cout << endl;
 		}
 	}
@@ -108,6 +123,9 @@ void LibraryProvider::book_sort_name()
 			return (a->name < b->name);
 		}
 	);
+	cout << "..." << endl;
+	cout << "Books are sorted by name" << endl;
+	cout << "..." << endl;
 }
 
 void LibraryProvider::book_sort_author()
@@ -117,6 +135,9 @@ void LibraryProvider::book_sort_author()
 			return (a->author < b->author);
 		}
 	);
+	cout << "..." << endl;
+	cout << "Books are sorted by author" << endl;
+	cout << "..." << endl;
 }
 
 void LibraryProvider::book_sort_publisher()
@@ -126,4 +147,7 @@ void LibraryProvider::book_sort_publisher()
 			return (a->publisher < b->publisher);
 		}
 	);
+	cout << "..." << endl;
+	cout << "Books are sorted by publisher" << endl;
+	cout << "..." << endl;
 }
